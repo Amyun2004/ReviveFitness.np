@@ -1,7 +1,7 @@
 // src/components/HomePage/AboutIntroSection/AboutIntroSection.jsx
 
 import React from 'react';
-import RandHandLogo from '../../../assets/logo/RandHand.png';
+import RandHandLogo from '../../assets/logo/RandHand.png';
 import { Link } from 'react-router-dom';
 import styles from './AboutIntroSection.module.css'; // Import the CSS Module
 
@@ -28,10 +28,6 @@ export default function AboutIntroSection() {
             community thrive together.
           </p>
         </div>
-      </div>
-      {/* This 'join-us-btn' is specific to this section, so it gets module-scoped */}
-      <div className={styles.joinUsBtn}> {/* Changed from join-us-btn div to use module class */}
-        <Link to="/signup">Join Us</Link>
       </div>
     </section>
   );

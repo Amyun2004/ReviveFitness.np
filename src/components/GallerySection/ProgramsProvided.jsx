@@ -5,6 +5,7 @@ import styles from './ProgramGallery.module.css'; // Import the new module CSS
 export default function ProgramsProvided() { // Renamed from ProgramGallery as per your note
   return (
     <>
+      <h2 className="heading">Our <span>Programs</span></h2>
       <span className={styles.scrollHint}>⇠ Scroll ⇢</span>
       <div className={styles.servicesContent}>
         {programs.map((prog, i) => (

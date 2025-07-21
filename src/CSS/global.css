@@ -56,7 +56,6 @@ h1, h2, h3, h4, h5, h6 {
 h1 { font-size: clamp(2rem, 4vw, 3rem); }
 h2 { font-size: clamp(1.75rem, 3vw, 2.25rem); }
 h3 { font-size: clamp(1.5rem, 2.5vw, 1.75rem); }
-p  { margin-block: 0.75rem; }
 
 /* Accent span (used across headings/text) */
 span { color: var(--sub-main-color-2); }
@@ -68,7 +67,7 @@ span { color: var(--sub-main-color-2); }
   justify-content: center;
   color: var(--main-font-color);
   margin-top: 3rem;
-  font-size: clamp(2rem, 4vw, 3rem);
+  font-size: clamp(2rem, 2.5vw, 3rem);
   font-weight: bold;
   position: relative;
   text-align: center;
@@ -84,6 +83,8 @@ span { color: var(--sub-main-color-2); }
   background: linear-gradient(90deg, transparent, var(--sub-main-color-2), transparent);
 }
 .heading span { color: var(--sub-main-color-2); }
+
+
 
 .reg-texts {
   display: flex;

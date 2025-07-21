@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { useLocation, Link } from 'react-router-dom';
-import logo from '../../../assets/logo/RandHand.png';
-import menuIcon from '../../../assets/button_imgs/menu_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg';
-import closeIcon from '../../../assets/button_imgs/close_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg';
+import logo from '../../assets/logo/RandHand.png';
+import menuIcon from '../../assets/button_imgs/menu_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg';
+import closeIcon from '../../assets/button_imgs/close_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg';
 
 // Import the CSS Module
 import styles from './Navbar.module.css'; // <--- THIS IS THE NEW IMPORT

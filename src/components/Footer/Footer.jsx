@@ -1,8 +1,8 @@
 // src/components/common/Footer/Footer.jsx
 
-import instagramIcon from '../../../assets/logo/icons8-instagram.svg';
-import facebookIcon from '../../../assets/logo/icons8-facebook.svg';
-import righthandlogo from '../../../assets/logo/RandHand.png';
+import instagramIcon from '../../assets/logo/icons8-instagram.svg';
+import facebookIcon from '../../assets/logo/icons8-facebook.svg';
+import righthandlogo from '../../assets/logo/RandHand.png';
 import { Link } from 'react-router-dom';
 
 // Import the CSS Module

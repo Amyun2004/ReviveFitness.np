@@ -4,7 +4,7 @@ import styles from './PricingSection.module.css'; // Import the new module CSS
 export default function ProgramPricingSection() {
   return (
     <section id="programs" className={styles.programsSection}>
-      <h2 className="heading">Our <span>Programs</span> & Pricing</h2>
+      <h2 className="heading"><span>Programs </span>& Pricing </h2>
       <div className={styles.programsContainer}>
         {/* Admission Fee */}
         <div className={styles.programBox}>
@@ -13,61 +13,74 @@ export default function ProgramPricingSection() {
         </div>
 
         {/* Regular Membership */}
+        {/* Regular Membership – transposed */}
         <div className={styles.programBox}>
           <h3>Regular Membership</h3>
           <table>
             <thead>
               <tr>
-                <th>Plan</th>
-                <th>1 Month</th>
-                <th>3 Months</th>
-                <th>6 Months</th>
-                <th>1 Year</th>
+                <th>Duration</th>
+                <th>GYM</th>
+                <th>GYM & Cardio</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>GYM</td>
+                <td>1 Month</td>
                 <td>4,000</td>
-                <td>10,500</td>
-                <td>18,000</td>
-                <td>30,000</td>
+                <td>5,000</td>
               </tr>
               <tr>
-                <td>GYM & Cardio</td>
-                <td>5,000</td>
+                <td>3 Months</td>
+                <td>10,500</td>
                 <td>12,000</td>
+              </tr>
+              <tr>
+                <td>6 Months</td>
+                <td>18,000</td>
                 <td>21,000</td>
+              </tr>
+              <tr>
+                <td>1 Year</td>
+                <td>30,000</td>
                 <td>36,000</td>
               </tr>
             </tbody>
           </table>
         </div>
 
-        {/* Daytime Membership */}
+
+        {/* Daytime Membership – transposed */}
         <div className={styles.programBox}>
-          <h3>Daytime Membership (10AM - 4PM)</h3>
+          <h3>Daytime Membership (10AM – 4PM)</h3>
           <table>
             <thead>
               <tr>
-                <th>Plan</th>
-                <th>1 Month</th>
-                <th>3 Months</th>
-                <th>6 Months</th>
-                <th>1 Year</th>
+                <th>Duration</th>
+                <th>GYM & Cardio</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>GYM & Cardio</td>
+                <td>1 Month</td>
                 <td>4,000</td>
+              </tr>
+              <tr>
+                <td>3 Months</td>
                 <td>10,500</td>
+              </tr>
+              <tr>
+                <td>6 Months</td>
                 <td>18,000</td>
+              </tr>
+              <tr>
+                <td>1 Year</td>
                 <td>30,000</td>
               </tr>
             </tbody>
           </table>
         </div>
+
 
         {/* Personal Training */}
         <div className={styles.programBox}>

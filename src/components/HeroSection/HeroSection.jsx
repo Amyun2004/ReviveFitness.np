@@ -1,8 +1,8 @@
 // src/components/HomePage/HeroSection/HeroSection.jsx
 
 import React from "react";
-import ReviveLogo from '../../../assets/logo/Revivefitness.png'; // Assuming this is correct path
-import model from '../../../assets/img_gym/sreejandaiback2a.png'; // Background image for Hero
+import ReviveLogo from '../../assets/logo/Revivefitness.png'; // Assuming this is correct path
+import model from '../../assets/img_gym/sreejandaiback2a.png'; // Background image for Hero
 import { Link } from 'react-router-dom';
 import styles from './HeroSection.module.css'; // Import the CSS Module
 
@@ -16,7 +16,7 @@ export default function HeroSection() {
         <p className={styles.quote}>“Unleash your true self”</p>
         <p className={styles.aboutTrainers}>with Nepal's Best Trainer(s)</p>
         <div className="nav-btn"> {/* Keeping 'nav-btn' global if it's general purpose */}
-          <Link to="/signup">Join Us</Link>
+          <Link to="/signup" className="navBtnWrapper">Join Us</Link>
         </div>
       </div>
     </section>

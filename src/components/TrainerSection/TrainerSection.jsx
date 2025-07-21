@@ -1,8 +1,8 @@
 // src/components/AboutPage/TrainerSection/TrainerSection.jsx
 
 import React from 'react';
-import TrainerCard from './TrainerCard/TrainerCard'; // Corrected import path
-import sreejandaiImg from '../../../assets/img_gym/sreejandai.png'; // Corrected import path
+import TrainerCard from '../TrainerCard/TrainerCard'; // Corrected import path
+import sreejandaiImg from '../../assets/img_gym/sreejandai.png'; // Corrected import path
 import styles from './TrainerSection.module.css'; // Import the CSS Module
 
 const trainers = [

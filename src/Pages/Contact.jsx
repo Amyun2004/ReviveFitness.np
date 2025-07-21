@@ -1,6 +1,6 @@
 // src/Pages/Contact.jsx
-import ContactInfo from "../components/ContactPage/ContactInfo/ContactInfo";
-import ContactForm from "../components/ContactPage/ContactForm/ContactForm";
+import ContactInfo from "../components/ContactInfo/ContactInfo";
+import ContactForm from "../components/ContactForm/ContactForm";
 import styles from "./Contact.module.css";
 
 export default function ContactPage() {

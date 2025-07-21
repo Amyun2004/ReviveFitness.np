@@ -1,0 +1,81 @@
+/* CurrentChallenge.module.css */
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;         /* same side‑padding as your other sections */
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  justify-items: center;
+  text-align: center;
+}
+.card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+.image {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  aspect-ratio: 14 /11 ;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1.5rem;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.title {
+  font-size: 1.75rem;
+  margin: 0;
+}
+
+.desc {
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* CurrentChallenge.module.css */
+
+.cta {
+  align-self: start;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #ffcc00;
+  color: black;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* add this right below your .cta rules */
+.cta:hover { /* a slightly darker yellow */
+  color: white;               /* swap text to white for contrast */
+}
+
+.heading {
+  margin-top: 0.5rem;    /* shrink from whatever default you had */
+  margin-bottom: 1rem;   /* optional, to give a bit of breathing room */
+  font-size: 2rem;       /* whatever size you prefer */
+}
+
+.heading span::before {
+  content: ' ';         /* this always prints one normal space */
+}
+@media (max-width: 600px) {
+  .image {
+    aspect-ratio: 4 / 3;
+  }
+}

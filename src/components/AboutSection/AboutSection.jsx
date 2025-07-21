@@ -1,7 +1,7 @@
 // src/components/AboutPage/AboutSection/AboutSection.jsx
 
 import React from 'react';
-import rightHandLogo from '../../../assets/logo/RandHand.png'; // Corrected path based on typical structure
+import rightHandLogo from '../../assets/logo/RandHand.png'; // Corrected path based on typical structure
 import { Link } from 'react-router-dom';
 import styles from './AboutSection.module.css'; // Import the CSS Module
 

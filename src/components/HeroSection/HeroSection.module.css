@@ -39,7 +39,7 @@
     z-index: 6; /* Ensure it's above the overlay */
     max-width: 90%;
     margin-inline: auto;
-    position: relative; /* Needs to be relative to contain its children correctly above overlay */
+    position: relative; /*Needs to be relative to contain its children correctly above overlay */ 
 }
 
 .reviveLogo { /* This maps to your original #logo */
@@ -62,7 +62,7 @@
 }
 
 /* If the nav-btn inside about-content has specific styles, add them here */
-.aboutContent .nav-btn { /* This targets the global nav-btn if nested */
+.aboutContent :global(.nav-btn) {
     grid-area: button;
     justify-self: center;
 }

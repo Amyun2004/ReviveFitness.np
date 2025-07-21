@@ -1,15 +1,14 @@
 // src/Pages/Home.jsx
 
 import React from 'react'; // Don't forget to import React
-import EmptySpace from "../components/common/EmptySpace"; // Ensure correct import path
 // Import the new specific Home page sections
-import HeroSection from '../components/HomePage/HeroSection/HeroSection';
-import AboutIntroSection from '../components/HomePage/AboutIntroSection/AboutIntroSection';
+import HeroSection from '../components/HeroSection/HeroSection';
+import AboutIntroSection from '../components/AboutIntroSection/AboutIntroSection';
 
 // Keep these as they are already separate components
-import TrainerSection from "../components/AboutPage/TrainerSection/TrainerSection"; // Ensure correct path
-import ProgramGallery from "../components/ProgramPage/ProgramsProvided"; // Ensure correct path (you named it ProgramsProvided earlier, but ProgramGallery is in your tree)
-import LocationSection from "../components/AboutPage/LocationSection"; // Ensure correct path
+import TrainerSection from "../components/TrainerSection/TrainerSection"; // Ensure correct path
+import ProgramGallery from "../components/GallerySection/ProgramsProvided"; // Ensure correct path (you named it ProgramsProvided earlier, but ProgramGallery is in your tree)
+import LocationSection from "../components/LocationSection/LocationSection"; // Ensure correct path
 
 // Import your global CSS file // Make sure this path is correct for your new global.css
 

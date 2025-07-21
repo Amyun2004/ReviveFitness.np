@@ -2,8 +2,8 @@
 import './CSS/global.css'
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/common/Navbar/Navbar'; // Correct path
-import Footer from './components/common/Footer/Footer'; // Correct path
+import Navbar from './components/Navbar/Navbar'; // Correct path
+import Footer from './components/Footer/Footer'; // Correct path
 
 import Home from './Pages/Home'; // Home now contains its specific sections
 import About from './Pages/AboutPage';
@@ -15,7 +15,7 @@ import SignupReviveFitness from './components/LoginPage/SignupReviveFitness';
 
 // Import your global CSS file
 // // This is where global styles are imported
-import EmptySpace from './components/common/EmptySpace';
+import EmptySpace from './components/Navbar/EmptySpace';
 
 function App() {
   return (
