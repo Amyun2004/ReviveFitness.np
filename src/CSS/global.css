@@ -1,11 +1,3 @@
-/* =========================================================
-   globalSecond.css  (Final Home-Ready Global Styles)
-   Purpose: Base reset, theme variables, typography, generic
-   elements, shared utilities, site-wide heading & text helpers,
-   reusable CTA (.nav-btn). NO component-specific layouts.
-   Component/page styles live in their respective *.module.css.
-========================================================= */
-
 /* 1. Reset & Base */
 * {
   margin: 0;
@@ -223,10 +215,3 @@ input:focus, textarea:focus, select:focus {
   from { opacity:0; transform: translateY(12px); }
   to   { opacity:1; transform: translateY(0); }
 }
-
-/* ===== Notes =================================================
-   Removed component-specific styles for:
-   HeroSection, AboutIntroSection, TrainerSection & TrainerCard,
-   ProgramGallery, LocationSection (map).
-   Those live in their individual *.module.css files.
-============================================================== */

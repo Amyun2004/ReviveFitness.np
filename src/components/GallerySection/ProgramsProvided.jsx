@@ -1,15 +1,23 @@
-// src/components/ProgramPage/ProgramsProvided.jsx
+import React, { useState } from 'react';
 import { programs } from './programsData';
-import styles from './ProgramGallery.module.css'; // Import the new module CSS
+import ProgramDetailsModal from '../ProgramDetail/ProgramDetailsModal';
+import styles from './ProgramGallery.module.css';
 
-export default function ProgramsProvided() { // Renamed from ProgramGallery as per your note
+export default function ProgramsProvided() {
+  const [selected, setSelected] = useState(null);
+
   return (
     <>
       <h2 className="heading">Our <span>Programs</span></h2>
       <span className={styles.scrollHint}>⇠ Scroll ⇢</span>
+
       <div className={styles.servicesContent}>
-        {programs.map((prog, i) => (
-          <div className={styles.row} key={i}>
+        {programs.map(prog => (
+          <div
+            key={prog.id}
+            className={styles.row}
+            onClick={() => setSelected(prog)}
+          >
             <div className={styles.imgWrapper}>
               <img src={prog.img} alt={prog.title} />
               <div className={styles.imgOverlay} />
@@ -18,6 +26,13 @@ export default function ProgramsProvided() { // Renamed from ProgramGallery as p
           </div>
         ))}
       </div>
+
+      {selected && (
+        <ProgramDetailsModal
+          program={selected}
+          onClose={() => setSelected(null)}
+        />
+      )}
     </>
   );
 }
