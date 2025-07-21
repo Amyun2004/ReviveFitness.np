@@ -2,10 +2,13 @@ import React from "react";
 import RandHandLogo from "../../assets/logo/RandHand.png";
 import ReviveLogo from "../../assets/logo/Revivefitness.png";
 import model from '../../assets/img_gym/sreejandaiback2a.png';
-import { Link } from 'react-router-dom';
-
+// REMOVE THIS LINE: import Signup from '../LoginPage/SignupReviveFitness';
+// REMOVE THIS LINE: import {useState} from 'react';
+import { Link } from 'react-router-dom'; // Import Link
 
 export default function Intro() {
+  // REMOVE THIS LINE: const [showSignup, setShowSignup] = useState(false);
+
   return (
     <>
       <section id="home" style={{backgroundImage: `url(${model})`}}>
@@ -14,8 +17,8 @@ export default function Intro() {
           <p className="quote">“Unleash your true self”</p>
           <p className="about-trainers">with Nepal's Best Trainer(s)</p>
           <div className="nav-btn">
-            <Link to="">Join Us</Link>
-
+            {/* Change this to Link */}
+            <Link to="/signup">Join Us</Link>
           </div>
         </div>
       </section>
@@ -41,6 +44,32 @@ export default function Intro() {
           </div>
         </div>
       </section>
+
+      {/* REMOVE THE ENTIRE MODAL RENDERING BLOCK */}
+      {/*
+      {showSignup && (
+          <div
+            className="modal-overlay"
+            onClick={() => setShowSignup(false)}
+            // ... rest of the style and content
+          >
+            <div
+              className="modal-content"
+              onClick={e => e.stopPropagation()}
+              // ... rest of the style and content
+            >
+              <button
+                className="modal-close"
+                onClick={() => setShowSignup(false)}
+                // ... rest of the style
+              >
+                ✖
+              </button>
+              <Signup />
+            </div>
+          </div>
+      )}
+      */}
     </>
   );
 }

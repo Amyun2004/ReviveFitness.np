@@ -1,24 +1,34 @@
-import EmptySpace from "../components/common/EmptySpace";
-import Footer from "../components/common/Footer";
-import Navbar from "../components/common/Navbar";
-import Intro from '../components/HomePage/intro'
-import '../CSS/Style.css'
-import TrainerSection from "../components/AboutPage/TrainerSection";
-import ProgramGallery from "../components/ProgramPage/ProgramsGallery";
-import LocationSection from "../components/AboutPage/LocationSection";
+// src/Pages/Home.jsx
+
+import React from 'react'; // Don't forget to import React
+import EmptySpace from "../components/common/EmptySpace"; // Ensure correct import path
+// Import the new specific Home page sections
+import HeroSection from '../components/HomePage/HeroSection/HeroSection';
+import AboutIntroSection from '../components/HomePage/AboutIntroSection/AboutIntroSection';
+
+// Keep these as they are already separate components
+import TrainerSection from "../components/AboutPage/TrainerSection/TrainerSection"; // Ensure correct path
+import ProgramGallery from "../components/ProgramPage/ProgramsProvided"; // Ensure correct path (you named it ProgramsProvided earlier, but ProgramGallery is in your tree)
+import LocationSection from "../components/AboutPage/LocationSection"; // Ensure correct path
+
+// Import your global CSS file // Make sure this path is correct for your new global.css
 
 export default function Home() {
-
     return(
         <div>
-            <EmptySpace/>
-            <Navbar/>
-            <Intro/>
+            {/* The Navbar and Footer are now outside of the Routes in App.jsx.
+                So, you likely don't need them directly in Home.jsx anymore,
+                unless you intend them to appear ONLY on the Home page.
+                Based on typical app structure, they usually wrap <Routes> in App.jsx.
+                I'm going to assume you want them to wrap ALL pages,
+                so they should be in App.jsx and REMOVED from Home.jsx.
+                I'll provide the corrected App.jsx below too. */}
+            
+            <HeroSection/>
+            <AboutIntroSection/>
             <TrainerSection/>
             <ProgramGallery/>
             <LocationSection/>
-            <Footer/>
-
         </div>
     );
-};
+}

@@ -1,15 +1,24 @@
-import rightHandLogo from '../../assets/logo/RandHand.png'
+// src/components/AboutPage/AboutSection/AboutSection.jsx
+
+import React from 'react';
+import rightHandLogo from '../../../assets/logo/RandHand.png'; // Corrected path based on typical structure
 import { Link } from 'react-router-dom';
+import styles from './AboutSection.module.css'; // Import the CSS Module
 
 export default function AboutSection() {
   return (
-    <section className="section-about">
-      <h1>
+    <section className={styles.sectionAbout}> {/* Apply module class */}
+      {/* The 'heading' class is global, so no change here */}
+      <h1 className="heading">
         About <span>ReviveFitness</span>
       </h1>
-      <div className="content-about">
-        <img src={rightHandLogo} alt="ReviveFitness Logo" className="logo-about" />
-        <div className="text-about">
+      <div className={styles.contentAbout}> {/* Apply module class */}
+        <img
+          src={rightHandLogo}
+          alt="ReviveFitness Logo"
+          className={styles.logoAbout} // Apply module class
+        />
+        <div className={styles.textAbout}> {/* Apply module class */}
           <h2>Our Story</h2>
           <p>
             ReviveFitness.np was founded with a simple vision: to make fitness accessible, enjoyable, and sustainable for everyone in Nepal. We believe in a holistic approach to health—where mind, body, and community thrive together.
@@ -25,9 +34,11 @@ export default function AboutSection() {
           <p>
             At ReviveFitness, our team is passionate, qualified, and always here to guide you—whether you're a beginner or a pro. We’re committed to helping you achieve real results, in a supportive and judgment-free zone.
           </p>
-          <Link to="/contact" className="join-us-btn">Join Us</Link>
+          <div className="nav-btn"> {/* Keep 'nav-btn' global if it's general purpose */}
+            <Link to="/signup">Join Us</Link>
+          </div>
         </div>
       </div>
     </section>
-  )
-};
+  );
+}

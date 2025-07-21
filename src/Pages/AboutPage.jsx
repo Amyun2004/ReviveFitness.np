@@ -1,20 +1,18 @@
-import '../CSS/about.css'; 
-import EmptySpace from '../components/common/EmptySpace';
-import Navbar from '../components/common/Navbar';
-import AboutSection from '../components/AboutPage/AboutSection';
-import TrainerSection from '../components/AboutPage/TrainerSection';
-import LocationSection from '../components/AboutPage/LocationSection';
-import Footer from '../components/common/Footer';
+// src/Pages/AboutPage.jsx
 
-export default function AboutPage() {
+import React from 'react';
+import AboutSection from '../components/AboutPage/AboutSection/AboutSection'; // New modularized About section
+import TrainerSection from '../components/AboutPage/TrainerSection/TrainerSection'; // Updated Trainer section
+import LocationSection from '../components/AboutPage/LocationSection'; // Ensure correct path for LocationSection
+
+
+
+export default function About() {
   return (
     <>
-      <EmptySpace />
-      <Navbar />
       <AboutSection />
       <TrainerSection />
       <LocationSection />
-      <Footer />
     </>
   );
 }

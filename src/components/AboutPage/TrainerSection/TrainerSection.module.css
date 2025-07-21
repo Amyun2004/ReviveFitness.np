@@ -1,0 +1,29 @@
+/* src/components/AboutPage/TrainerSection/TrainerSection.module.css */
+
+.aboutContainer { /* Maps to .about-container */
+    max-width: 22em; /* Keep this max-width for the container of cards */
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Remove #about h2 as it's general heading style, handled by global .heading */
+
+/* Responsive for TrainerSection's container */
+@media (max-width: 768px) {
+    .aboutContainer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .aboutContainer {
+        gap: 1.5rem; /* Adjust gap for smaller screens */
+    }
+}
