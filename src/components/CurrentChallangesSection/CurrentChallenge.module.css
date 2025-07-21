@@ -3,7 +3,7 @@
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 2rem;         /* same side‑padding as your other sections */
+  padding: 0 rem;         /* same side‑padding as your other sections */
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
@@ -17,10 +17,13 @@
 }
 
 .image {
-  width: 100%;
-  display: block;
+  width: 80%;
+  display: flex;
+  justify-self: center;
   object-fit: cover;
-  aspect-ratio: 14 /11 ;
+  aspect-ratio: 14 /10 ;
+  height: 70vh;
+  border-radius: 20px;
 }
 
 .overlay {
@@ -33,6 +36,8 @@
   color: white;
   display: flex;
   flex-direction: column;
+  justify-self: center;
+  width:80%;
   gap: 0.5rem;
 }
 

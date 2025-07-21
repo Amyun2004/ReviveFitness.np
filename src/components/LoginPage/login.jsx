@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import '../../CSS/auth.css';
+import './auth.css';
 import logo from '../../assets/logo/RandHand.png';
 
 export default function LoginPage() {
@@ -22,7 +22,7 @@ export default function LoginPage() {
   return (
     // REMOVE THE MODAL OVERLAY DIV. Replace it with a main container for the page.
     // <div className="modal-overlay" onClick={() => navigate(backgroundPath)}>
-    <div className="auth-page-container"> {/* A new div to act as the main page container */}
+    <div className="auth-container"> {/* A new div to act as the main page container */}
       {/* Remove the onClick from the auth-modal as it's no longer a modal */}
       <div className="auth-modal">
         {/* The Link to="/" is correct for logo navigation */}
@@ -55,7 +55,7 @@ export default function LoginPage() {
           <Link to="/signup" className="other-page-link" /* state={{ backgroundPath }} */>
             Don't have an account?
           </Link>
-          <Link to="/admin" className="other-page-link" /* state={{ backgroundPath }} */>
+          <Link to="/admin-login" className="other-page-link" /* state={{ backgroundPath }} */>
             Login as Admin
           </Link>
         </form>

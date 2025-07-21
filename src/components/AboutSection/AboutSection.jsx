@@ -10,7 +10,7 @@ export default function AboutSection() {
     <section className={styles.sectionAbout}> {/* Apply module class */}
       {/* The 'heading' class is global, so no change here */}
       <h1 className="heading">
-        About <span>ReviveFitness</span>
+        About ReviveFitness
       </h1>
       <div className={styles.contentAbout}> {/* Apply module class */}
         <img

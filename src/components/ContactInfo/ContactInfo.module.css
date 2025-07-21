@@ -5,7 +5,6 @@
   border-radius: 15px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.4);
   margin: 0 auto; /* Parent layout handles margin */
-  max-width: 400px;
   flex: 1 1 320px;
   text-align: left;
   color: var(--main-font-color);

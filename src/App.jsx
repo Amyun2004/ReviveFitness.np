@@ -20,8 +20,7 @@ import EmptySpace from './components/Navbar/EmptySpace';
 function App() {
   return (
     <Router>
-      <EmptySpace/>
-      <Navbar /> {/* Navbar appears on all pages */}
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -31,7 +30,7 @@ function App() {
         <Route path="/admin-login" element={<AdminLogin />} />
         <Route path="/signup" element={<SignupReviveFitness />} />
       </Routes>
-      <Footer /> {/* Footer appears on all pages */}
+      
     </Router>
   );
 }

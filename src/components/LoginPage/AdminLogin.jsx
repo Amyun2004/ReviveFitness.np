@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import '../../CSS/auth.css'; // Assuming you have shared CSS for auth pages
+import './auth.css'; // Assuming you have shared CSS for auth pages
 import logo from '../../assets/logo/RandHand.png'; // Your logo asset
 
 export default function AdminLoginPage() {
@@ -29,7 +29,7 @@ export default function AdminLoginPage() {
   };
 
   return (
-    <div className="auth-page-container"> {/* Main container for the page */}
+    <div className="auth-container"> {/* Main container for the page */}
       <div className="auth-modal"> {/* This div can be styled to center the form */}
         {/* Logo to navigate back to the home page */}
         <Link to="/" className="auth-logo-link">

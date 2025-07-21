@@ -9,25 +9,23 @@ import AboutIntroSection from '../components/AboutIntroSection/AboutIntroSection
 import TrainerSection from "../components/TrainerSection/TrainerSection"; // Ensure correct path
 import ProgramGallery from "../components/GallerySection/ProgramsProvided"; // Ensure correct path (you named it ProgramsProvided earlier, but ProgramGallery is in your tree)
 import LocationSection from "../components/LocationSection/LocationSection"; // Ensure correct path
+import Navbar from '../components/Navbar/Navbar';
+import EmptySpace from '../components/Navbar/EmptySpace';
+import Footer from '../components/Footer/Footer';
 
 // Import your global CSS file // Make sure this path is correct for your new global.css
 
 export default function Home() {
     return(
         <div>
-            {/* The Navbar and Footer are now outside of the Routes in App.jsx.
-                So, you likely don't need them directly in Home.jsx anymore,
-                unless you intend them to appear ONLY on the Home page.
-                Based on typical app structure, they usually wrap <Routes> in App.jsx.
-                I'm going to assume you want them to wrap ALL pages,
-                so they should be in App.jsx and REMOVED from Home.jsx.
-                I'll provide the corrected App.jsx below too. */}
-            
+            <EmptySpace/>
+            <Navbar/>
             <HeroSection/>
             <AboutIntroSection/>
             <TrainerSection/>
             <ProgramGallery/>
             <LocationSection/>
+            <Footer/>
         </div>
     );
 }

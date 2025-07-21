@@ -1,4 +1,6 @@
-
+input{
+  width: 5%;
+}
 
 
 .modal-overlay {
@@ -33,7 +35,6 @@
 .auth-container {
   width: 100vw;
   height: 100vh;
-   background-color: rgba(0, 0, 0, 0);
   background: linear-gradient(to bottom right, #111, #222);
   display: flex;
   justify-content: center;
@@ -156,5 +157,32 @@ body, html {
   align-items: center;
   justify-content: center;
   padding: 1rem;
+}
+
+
+/* Align checkbox + label neatly */
+.admin-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* style for your “other page” links */
+.other-page-link {
+  display: block;
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+  color: #aaa;
+  text-decoration: underline;
+  text-align: center;
+}
+.other-page-link:hover {
+  color: #fff;
+}
+
+/* make sure your button spans full width */
+form.sign-in button[type="submit"] {
+  width: 100%;
 }
 
