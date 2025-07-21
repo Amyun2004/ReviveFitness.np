@@ -40,7 +40,6 @@
 @media (max-width: 600px) {
   .contactInfo {
     padding: 1.8em;
-    max-width: 100%;
   }
   .contactInfo li {
     font-size: 1rem;

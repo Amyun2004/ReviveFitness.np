@@ -62,9 +62,7 @@ span { color: var(--sub-main-color-2); }
 
 /* 4. Global Heading Block Helpers */
 .heading {
-  display: flex;
   align-items: center;
-  justify-content: center;
   color: var(--main-font-color);
   margin-top: 3rem;
   font-size: clamp(2rem, 1vw, 3rem);
