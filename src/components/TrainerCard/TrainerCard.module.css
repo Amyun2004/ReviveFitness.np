@@ -7,6 +7,7 @@
     width: fit-content;
     overflow: hidden;
     border-radius: 20px;
+    height: 50vw;
 }
 
 .trainerImage { /* Maps to .trainer-image */
@@ -88,8 +89,7 @@
 /* Responsive for TrainerCard */
 @media (max-width: 768px) {
     .trainerImage img {
-        width: 80%;
-        margin-inline: auto; /* Center image within the card */
+        margin: 0; /* Center image within the card */
     }
 }
 

@@ -108,7 +108,7 @@ span::before {
 }
 
 /* 5. Elements */
-img { max-width: 100%; display: block; }
+img { max-width: 80%; display: block; }
 a {
   color: inherit;
   text-decoration: none;

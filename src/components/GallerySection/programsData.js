@@ -17,24 +17,9 @@ export const programs = [
     // desc: 'Build strength, size and aesthetics with guidance from experienced trainers.',
   },
   {
-    title: 'Group Class',
-    // img: groupClassImg,
-    // desc: 'Fun group workouts including Zumba, aerobics, HIIT, and more.',
-  },
-  {
-    title: "Ladies' Class",
-    // img: ladiesImg,
-    // desc: 'Women-only fitness classes in a comfortable environment.',
-  },
-  {
-    title: 'Cardio',
+    title: 'Running',
     // img: cardioImg,
     // desc: 'Treadmills, cycling, rowing and all your cardio needs.',
-  },
-  {
-    title: 'Functional',
-    // img: functionalImg,
-    // desc: 'Improve mobility, flexibility, and real-world strength.',
   },
   {
     title: 'Online Coaching',
