@@ -303,6 +303,10 @@
     }
 }
 @media (max-width: 530px) {
+    .navbar .nav-btn {
+        display: none;
+    }
+
     .navBtnDesktop { /* Desktop join us button hides */
         display: none;
     }

@@ -9,23 +9,18 @@ import AboutIntroSection from '../components/AboutIntroSection/AboutIntroSection
 import TrainerSection from "../components/TrainerSection/TrainerSection"; // Ensure correct path
 import ProgramGallery from "../components/GallerySection/ProgramsProvided"; // Ensure correct path (you named it ProgramsProvided earlier, but ProgramGallery is in your tree)
 import LocationSection from "../components/LocationSection/LocationSection"; // Ensure correct path
-import Navbar from '../components/Navbar/Navbar';
-import EmptySpace from '../components/Navbar/EmptySpace';
-import Footer from '../components/Footer/Footer';
+
 
 // Import your global CSS file // Make sure this path is correct for your new global.css
 
 export default function Home() {
     return(
         <div>
-            <EmptySpace/>
-            <Navbar/>
             <HeroSection/>
             <AboutIntroSection/>
             <TrainerSection/>
             <ProgramGallery/>
             <LocationSection/>
-            <Footer/>
         </div>
     );
 }

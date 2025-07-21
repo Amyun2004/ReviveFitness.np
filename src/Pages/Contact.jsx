@@ -2,16 +2,11 @@
 import ContactInfo from "../components/ContactInfo/ContactInfo";
 import ContactForm from "../components/ContactForm/ContactForm";
 import styles from "./Contact.module.css";
-import EmptySpace from "../components/Navbar/EmptySpace";
-import Navbar from "../components/Navbar/Navbar";
-import Footer from "../components/Footer/Footer";
 
 export default function ContactPage() {
   return (
 
     <>
-      <EmptySpace/>
-      <Navbar/>
       <h1 className="heading">
         Contact Us
       </h1>
@@ -22,7 +17,7 @@ export default function ContactPage() {
         <ContactInfo />
         <ContactForm />
       </main>
-      <Footer />
+
     </>
   );
 }
