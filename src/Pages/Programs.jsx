@@ -10,8 +10,8 @@ export default function Programs() {
   const current = {
     imageUrl: challangePng,
     title: "90-day-challange",
-    description: "Join us for 30 days of leg‑burning, strength‑building squats!",
-  };
+    description: "Ready to transform your lower body? Join our 30‑day Squat Challenge—daily, expertly crafted workouts designed to sculpt powerful legs, boost endurance, and unlock your inner strength. Let’s squat to success together!"
+  }
   return (
     
     <div>

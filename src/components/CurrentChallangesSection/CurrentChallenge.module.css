@@ -79,6 +79,98 @@
 .heading span::before {
   content: ' ';         /* this always prints one normal space */
 }
+
+/* …your existing rules… */
+
+/* ============ Modal Overlay ============ */
+.modalOverlay {
+  position: fixed;
+  inset: 0;                            /* top/right/bottom/left = 0 */
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background: #1f1f1f;
+  color: white;            /* ⬅️ override white text */
+  text-align: left;       /* ⬅️ left‑align headings & paragraphs */
+  padding: 2rem;
+  border-radius: 0.5rem;
+  max-width: 480px;
+  width: 90%;
+  
+  /* New additions: */
+  max-height: 90vh;       /* never taller than viewport */
+  overflow-y: auto;       /* scroll if it does */
+  
+  position: relative;
+  z-index: 1001;
+}
+
+
+.closeBtn {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  font-size: 1.5rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+.modalTitle {
+  margin-top: 0;
+  font-size: 1.75rem;
+}
+
+.modalDesc {
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+
+/* …your existing modalOverlay/modalContent/etc… */
+
+.modalInfo {
+  margin: 1.5rem 0;
+  text-align: left;
+}
+
+.modalInfo h4 {
+  margin-bottom: 0.3rem;
+  font-size: 1.1rem;
+}
+
+.modalInfo p {
+  margin: 0 0 1rem;
+}
+
+.modalInfo ul {
+  padding-left: 1.2rem;
+  margin: 0 0 1.5rem;
+}
+
+.modalInfo li {
+  margin-bottom: 0.5rem;
+}
+
+
+.joinBtn {
+  padding: 0.6rem 1.2rem;
+  background-color: #ffcc00;
+  border: none;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.joinBtn:hover {
+  background-color: #e6b800;
+}
+
 @media (max-width: 600px) {
   .image {
     aspect-ratio: 4 / 3;
